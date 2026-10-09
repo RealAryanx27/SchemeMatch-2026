@@ -1,0 +1,72 @@
+[
+  {
+    "id": "SCH_001",
+    "name": "PM SVANidhi (Street Vendor's AtmaNirbhar Nidhi)",
+    "category": "Loans & Micro-Finance",
+    "target_occupations": ["Street Vendor", "Small Trader", "Artisan", "Self-Employed"],
+    "min_age": 18,
+    "max_age": 65,
+    "max_income": 300000,
+    "allowed_genders": ["All"],
+    "benefit_summary": "Collateral-free working capital loan up to ₹50,000 with 7% interest subsidy and cashback on digital transactions.",
+    "official_source": "https://pmsvanidhi.mohua.gov.in/",
+    "required_documents": ["Aadhaar Card", "Voter ID", "Vendor Certificate / Letter of Recommendation"],
+    "required_fields": ["is_street_vendor", "has_bank_account"]
+  },
+  {
+    "id": "SCH_002",
+    "name": "Ayushman Bharat (PM-JAY)",
+    "category": "Healthcare & Insurance",
+    "target_occupations": ["Daily Wager", "Farmer", "Laborer", "Street Vendor", "Unemployed"],
+    "min_age": 0,
+    "max_age": 120,
+    "max_income": 250000,
+    "allowed_genders": ["All"],
+    "benefit_summary": "Free health insurance coverage up to ₹5 Lakh per family per year for secondary and tertiary hospitalization.",
+    "official_source": "https://pmjay.gov.in/",
+    "required_documents": ["Aadhaar Card", "Ration Card", "Income Certificate"],
+    "required_fields": ["has_secc_status", "is_bpl"]
+  },
+  {
+    "id": "SCH_003",
+    "name": "PM Vishwakarma Yojana",
+    "category": "Skill Development & Loans",
+    "target_occupations": ["Artisan", "Craftsman", "Blacksmith", "Carpenter", "Tailor", "Weaver"],
+    "min_age": 18,
+    "max_age": 60,
+    "max_income": 400000,
+    "allowed_genders": ["All"],
+    "benefit_summary": "Skill training stipend of ₹500/day, toolkit incentive of ₹15,000, and collateral-free loan up to ₹3 Lakh at 5% interest.",
+    "official_source": "https://pmvishwakarma.gov.in/",
+    "required_documents": ["Aadhaar Card", "Bank Passbook", "Skill/Trade Verification"],
+    "required_fields": ["traditional_trade_type"]
+  },
+  {
+    "id": "SCH_004",
+    "name": "PM Kisan Samman Nidhi",
+    "category": "Agriculture & Income Support",
+    "target_occupations": ["Farmer"],
+    "min_age": 18,
+    "max_age": 75,
+    "max_income": 500000,
+    "allowed_genders": ["All"],
+    "benefit_summary": "Direct income support of ₹6,000 per year paid in three equal installments of ₹2,000 directly to bank accounts.",
+    "official_source": "https://pmkisan.gov.in/",
+    "required_documents": ["Aadhaar Card", "Land Ownership Record (Khata/Khasra)", "Bank Account Details"],
+    "required_fields": ["owns_cultivable_land"]
+  },
+  {
+    "id": "SCH_005",
+    "name": "PM Mudra Yojana (Shishu Tier)",
+    "category": "Business Loans",
+    "target_occupations": ["Entrepreneur", "Small Trader", "Self-Employed", "Artisan"],
+    "min_age": 18,
+    "max_age": 65,
+    "max_income": 1000000,
+    "allowed_genders": ["All"],
+    "benefit_summary": "Collateral-free business startup loan up to ₹50,000 for setting up micro-enterprises.",
+    "official_source": "https://www.mudra.org.in/",
+    "required_documents": ["Aadhaar Card", "PAN Card", "Business Plan Proposal", "Bank Statement"],
+    "required_fields": ["business_type"]
+  }
+]
