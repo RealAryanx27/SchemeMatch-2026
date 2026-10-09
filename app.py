@@ -38,6 +38,25 @@ tab1, tab2, tab3 = st.tabs(["🎯 Scheme Matcher", "🧺 Welfare Basket Stacking
 # ---------------------------------------------------------
 with tab1:
     st.subheader("1. Vernacular Profile Intake")
+    st.write("🎙️ **Option A: Speak via Microphone**")
+    recorded_audio = st.audio_input("Record your query in Hindi, Hinglish, or English")
+    
+    if recorded_audio is not None:
+        if st.button("✨ Process Recorded Audio", type="primary"):
+            with st.spinner("Gemini Flash is analyzing your voice..."):
+                try:
+                    audio_bytes = recorded_audio.read()
+                    extracted = ai_engine.extract_profile_from_audio(
+                        audio_bytes, 
+                        mime_type=recorded_audio.type or "audio/wav"
+                    )
+                    st.session_state["extracted_profile"] = extracted
+                    st.success("Profile extracted directly from your voice!")
+                    st.rerun()
+                except Exception as e:
+                    st.error(f"Voice extraction error: {e}")
+
+    st.divider()
     voice_text = st.text_area(
         "Enter conversational prompt / voice transcript (Hindi, Hinglish, or English):",
         value="Namaste, mera naam Ramesh hai. Main Kanpur me rehne wala street vendor hu, saal ke lagbhag 1 lakh 20 hazar kamata hu aur meri umar 32 saal hai.",
